@@ -9,13 +9,14 @@ const Page = styled.main`
 
 const Heading = styled.h2`
   font-size: xx-large;
-  color: deeppink;
+  color: purple;
 `
+const title = `Have you asked youself "what's next?" lately?`;
 
 function HomePage() {
   return (
     <Page>
-      <Heading>Home Page</Heading>
+      <Heading>{title}</Heading>
     </Page>
   );
 }
