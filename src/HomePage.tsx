@@ -1,22 +1,20 @@
 import React from 'react';
-import styled from 'styled-components';
+import styles from './styles/home.module.css';
 
-const Page = styled.main`
-  padding: 16px;
-  margin-left: 20vw;
-  margin-right: 20vw;
-`
+const Page: React.FC = ({ children }) => (
+  <main className={styles.page}>
+    {children}
+  </main>
+);
 
-const Heading = styled.h2`
-  font-size: xx-large;
-  color: purple;
-`
-const title = `Have you asked youself "what's next?" lately?`;
+const Heading: React.FC = ({ children }) => (
+  <h2>{children}</h2>
+)
 
 function HomePage() {
   return (
     <Page>
-      <Heading>{title}</Heading>
+      <Heading>Ulysses</Heading>
     </Page>
   );
 }
