@@ -15,7 +15,7 @@ module.exports = {
           name: "home",
           filename: "remoteEntry.js",
           remotes: {
-            home: "home@http://localhost:4003/remoteEntry.js",
+            home: "home@http://localhost:4003/remoteEntry.js", /** self served */
           },
           exposes: {
             './HomePage': './src/HomePage'

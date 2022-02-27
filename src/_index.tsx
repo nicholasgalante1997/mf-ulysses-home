@@ -4,7 +4,7 @@ import HomePage from './HomePage';
 
 ReactDOM.render(
   <React.StrictMode>
-    <HomePage />
+    <HomePage onClick={() => {}}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
