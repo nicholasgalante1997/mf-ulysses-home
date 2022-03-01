@@ -2,7 +2,9 @@ import React from 'react';
 import styles from '../styles/home.module.css';
 
 const Heading: React.FC = ({ children }) => (
-    <h2>{children}</h2>
+   <span className={styles.gradientContainer}>
+       <h2 className={styles.heading}>{children}</h2>
+   </span> 
 )
 
 export default Heading;

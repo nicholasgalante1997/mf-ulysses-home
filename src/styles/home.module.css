@@ -5,6 +5,7 @@ body {
   font-family: 'Lora', serif;
   font-weight: 300;
   color: black;
+  background-color: #e2e5de;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -12,7 +13,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 hr {
-  width: 30%;
+  width: 50%;
   color: black;
 }
 
@@ -30,8 +31,8 @@ hr {
 }
 
 .beginButton:hover {
-  min-width: 2rem;
-  padding: 12px;
+  background-color: #e2e5de;
+  color: black;
   box-shadow: 0 4px 8px black;
 }
 
@@ -40,13 +41,14 @@ hr {
   font-size: 18px;
   font-weight: 300;
   text-align: center;
+  background-color: #e2e5de;
 }
 
 .page {
     min-width: auto;
     padding: 0;
-    margin: 15vh 0 0 0;
-    background: white;    
+    margin: 0 auto;
+    background: #e2e5de;    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,4 +56,24 @@ hr {
     text-align: center;
     align-self: center;
     justify-self: center;
+}
+
+.gradientContainer {
+  background: linear-gradient(
+    to right, 
+    rgba(0,0,0), 
+    #820000
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.heading {
+  font-size: 6rem;
+  font-style: italic;
+  font-weight: 200;
+  margin: 1rem;
+  padding: 0;
 }
